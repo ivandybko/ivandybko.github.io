@@ -1,66 +1,244 @@
 <!DOCTYPE html>
-<html  >
+<html lang="en">
 <head>
-  <!-- Site made with Mobirise Website Builder v5.9.0, https://mobirise.com -->
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="Mobirise v5.9.0, mobirise.com">
-  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
-  <link rel="shortcut icon" href="assets/images/logo5.png" type="image/x-icon">
-  <meta name="description" content="Personal webpage of Ivan Dybko">
-  
-  
-  <title>Ivan Dybko</title>
-  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
-  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-grid.min.css">
-  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-reboot.min.css">
-  <link rel="stylesheet" href="assets/theme/css/style.css">
-  <link rel="preload" href="https://fonts.googleapis.com/css?family=Inter+Tight:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
-  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter+Tight:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i&display=swap"></noscript>
-  <link rel="preload" as="style" href="assets/mobirise/css/mbr-additional.css"><link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
-
-  
-  
-  
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ivan Dybko - Resume</title>
+    <!-- Подключение стилей Bootstrap и FontAwesome -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <!-- Подключение стилей для анимаций AOS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: 'Roboto', sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+        header {
+            background: #282c34;
+            color: #fff;
+            padding: 60px 0;
+            text-align: center;
+        }
+        header h1 {
+            font-size: 48px;
+            margin: 0;
+        }
+        header p {
+            font-size: 20px;
+            margin: 10px 0 0;
+            color: #61dafb;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .section {
+            margin-bottom: 40px;
+        }
+        .section h2 {
+            font-weight: 500;
+            border-bottom: 2px solid #61dafb;
+            padding-bottom: 10px;
+            display: inline-block;
+        }
+        .contact-info, .skills-list, .education-list, .additional-education-list, .competitions-list {
+            margin: 20px 0;
+            display: flex;
+            align-items: center;
+        }
+        .contact-info i, .skills-list i, .education-list i, .additional-education-list i, .competitions-list i {
+            font-size: 24px;
+            margin-right: 15px;
+            color: #61dafb;
+        }
+        .contact-info a, .skills-list a, .education-list a, .additional-education-list a, .competitions-list a {
+            color: #61dafb;
+            text-decoration: none;
+        }
+        .btn {
+            background-color: #61dafb;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+        .btn:hover {
+            background-color: #21a1f1;
+        }
+        .company-logos {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .company-logos img {
+            width: 80px;
+            transition: transform 0.3s ease;
+        }
+        .company-logos img:hover {
+            transform: scale(1.1);
+        }
+        footer {
+            background-color: #282c34;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
+    <header>
+        <h1>Ivan Dybko</h1>
+        <p>Student of BMSTU | Looking for an Internship</p>
+    </header>
+    <div class="container">
+        <div class="section contact" data-aos="fade-up">
+            <h2>Contact Information</h2>
+            <div class="contact-info">
+                <i class="fas fa-map-marker-alt"></i>
+                <p>Moscow, Russia</p>
+            </div>
+            <div class="contact-info">
+                <i class="fas fa-phone"></i>
+                <p>+7 (915) 242-15-75</p>
+            </div>
+            <div class="contact-info">
+                <i class="fas fa-envelope"></i>
+                <a href="mailto:ivan.e.dybko@gmail.com">ivan.e.dybko@gmail.com</a>
+            </div>
+            <div class="contact-info">
+                <i class="fab fa-linkedin"></i>
+                <a href="https://linkedin.com/in/ivandybko" target="_blank">LinkedIn</a>
+            </div>
+            <div class="contact-info">
+                <i class="fab fa-github"></i>
+                <a href="https://github.com/ivandybko" target="_blank">GitHub</a>
+            </div>
+            <div class="contact-info">
+                <i class="fab fa-telegram"></i>
+                <a href="https://t.me/ivandybko" target="_blank">Telegram</a>
+            </div>
+            <a class="btn" href="PATH_TO_CV_FILE" target="_blank">Download Resume (PDF)</a>
+        </div>
 
-<!-- Analytics -->
-This is a personal webpage of Ivan Dybko.
-<!-- /Analytics -->
+        <div class="section" data-aos="fade-up">
+            <h2>Summary</h2>
+            <p>Student of Bauman Moscow State Technical University. Focused on applied mathematics and looking for an internship opportunity to apply and expand my skills in software development and data analysis.</p>
+        </div>
 
+        <div class="section" data-aos="fade-up">
+            <h2>Key Skills</h2>
+            <ul class="skills-list">
+                <li><i class="fas fa-code"></i>C++, Python, Algorithms</li>
+                <li><i class="fas fa-laptop-code"></i>Object Oriented Programming</li>
+                <li><i class="fas fa-brain"></i>Machine Learning, TensorFlow</li>
+                <li><i class="fas fa-network-wired"></i>Artificial Neural Networks</li>
+                <li><i class="fas fa-calculator"></i>Wolfram Mathematica, Matlab</li>
+                <li><i class="fas fa-database"></i>Git, SQL, Linux</li>
+            </ul>
+        </div>
 
-  
-  <section data-bs-version="5.1" class="header1 cid-tN6aGRqmAa mbr-fullscreen" id="header01-0">
-	
+        <div class="section" data-aos="fade-up">
+            <h2>Education</h2>
+            <ul class="education-list">
+                <li>
+                    <i class="fas fa-university"></i>
+                    <strong>Applied Mathematics</strong><br>
+                    Bauman Moscow State Technical University, Moscow, Russia<br>
+                    Bachelor's degree, Faculty of Fundamental Sciences
+                </li>
+                <li>
+                    <i class="fas fa-school"></i>
+                    <strong>General Education</strong><br>
+                    Lyceum №1580 at Bauman Moscow State Technical University, Moscow, Russia
+                </li>
+            </ul>
+        </div>
 
-	
-	
+        <div class="section" data-aos="fade-up">
+            <h2>Languages</h2>
+            <p><i class="fas fa-language"></i> Russian (native), English (Upper-Intermediate level)</p>
+        </div>
 
-	<div class="container-fluid">
-		<div class="row justify-content-center">
-			<div class="col-12 col-md-12 col-lg-5 image-wrapper">
-				<img class="w-100" src="assets/images/img-3324-1973x2631.png" alt="Ivan Dybko">
-			</div>
-			<div class="col-12 col-lg col-md-12">
-				<div class="text-wrapper align-left">
-					<h1 class="mbr-section-title mbr-fonts-style mb-4 display-2">
-						<strong>Hello, I'm Ivan Dybko</strong></h1>
-					<p class="mbr-text mbr-fonts-style mb-4 display-7">You can view or download my CV below.</p>
-					<div class="mbr-section-btn mt-3"><a class="btn btn-danger display-7" href="CV/Ivan_Dybko_CV_English.pdf">Download CV (English)</a> <a class="btn btn-danger display-7" href="CV/%D0%A0%D0%B5%D0%B7%D1%8E%D0%BC%D0%B5_%D0%98%D0%B2%D0%B0%D0%BD_%D0%94%D1%8B%D0%B1%D0%BA%D0%BE_%D0%A0%D1%83%D1%81%D1%81%D0%BA%D0%B8%D0%B9.pdf">Резюме (Русский)</a></div>
-				</div>
-			</div>
-		</div>
-	</div>
-</section>
+        <div class="section" data-aos="fade-up">
+            <h2>Additional Education</h2>
+            <ul class="additional-education-list">
+                <li>
+                    <i class="fas fa-book"></i>
+                    <strong>Algorithms: Theory and Practice. Methods</strong><br>
+                    Computer Science Center, July 2023<br>
+                    <a href="https://ivandybko.github.io/Certifications/Ivan_Dybko_CSC_Algorithms_theory_and_practice_Methods.pdf" target="_blank">Certificate</a> | 
+                    <a href="https://stepik.org/cert/2125461" target="_blank">Credentials</a>
+                </li>
+                <li>
+                    <i class="fas fa-book"></i>
+                    <strong>Algorithms: Theory and Practice. Data Structures</strong><br>
+                    Computer Science Center, August 2023<br>
+                    <a href="https://ivandybko.github.io/Certifications/Ivan_Dybko_CSC_Algorithms_theory_and_practice_Data_structures.pdf" target="_blank">Certificate</a> | 
+                    <a href="https://stepik.org/cert/2143487" target="_blank">Credentials</a>
+                </li>
+                <li>
+                    <i class="fas fa-book"></i>
+                    <strong>DevOps-engineer</strong><br>
+                    Bauman Moscow State Technical University, July 2024
+                </li>
+                <li>
+                    <i class="fas fa-book"></i>
+                    <strong>Machine Learning Specialization</strong><br>
+                    Stanford University & DeepLearning.AI, August 2024<br>
+                    <a href="https://ivandybko.github.io/Certifications/Ivan_Dybko_Stanford_Machine_Learning_Specialization.pdf" target="_blank">Certificate</a> | 
+                    <a href="https://www.coursera.org/account/accomplishments/specialization/QI51LU9Z2M2Q" target="_blank">Credentials</a>
+                </li>
+            </ul>
+        </div>
 
+        <div class="section" data-aos="fade-up">
+            <h2>Competitions</h2>
+            <ul class="competitions-list">
+                <li>
+                    <i class="fas fa-trophy"></i>
+                    Winner of Regional case-championship of schoolchildren in economics and entrepreneurship in Moscow by HSE and McKinsey & Company, October 2021<br>
+                    <a href="https://ivandybko.github.io/Competitions/%D0%9A%D0%B5%D0%B9%D1%81-%D1%87%D0%B5%D0%BC%D0%BF%D0%B8%D0%BE%D0%BD%D0%B0%D1%82.pdf" target="_blank">Diploma (in Russian)</a>
+                </li>
+            </ul>
+        </div>
 
-<script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/smoothscroll/smooth-scroll.js"></script>
-  <script src="assets/ytplayer/index.js"></script>
-  <script src="assets/theme/js/script.js"></script>
-  
-  
-  
+        <div class="section" data-aos="fade-up">
+            <h2>Company Logos</h2>
+            <div class="company-logos">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/7/71/Bauman_MSTU_logo.png" alt="BMSTU">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a8/Stanford_logo.svg" alt="Stanford">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/2/23/HSE_logo.png" alt="HSE">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/2/20/McKinsey_and_Company_logo.png" alt="McKinsey & Company">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/0/0b/DeepLearning.AI_logo.png" alt="DeepLearning.AI">
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 Ivan Dybko</p>
+    </footer>
+
+    <!-- Подключение скриптов для анимаций AOS и Bootstrap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        // Инициализация анимаций AOS
+        AOS.init({
+            duration: 800, // Длительность анимаций
+            offset: 200, // Смещение для анимаций
+            once: true // Запуск анимации только один раз
+        });
+    </script>
 </body>
 </html>
